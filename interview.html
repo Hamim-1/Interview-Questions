@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing interview</title>
+</head>
+
+<body>
+
+
+    <step1>
+
+        <Question1>
+            <Question>
+                <!-- What is HTML? Explain its purpose & Basic Syntax Of HTM  -->
+            </Question>
+
+            <Answer>
+                <!-- HTML stands for Hyper Text Markup Language. It is a Markup language which is used for to create
+                structure of website, like by HTML we can display images,text,form,heading and many others. -->
+            </Answer>
+
+            <Example>
+                <!-- <!DOCTYPE html>
+                <html lang="en">
+    
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                </head>
+    
+                <body> </body>
+    
+                </html> -->
+            </Example>
+        </Question1>
+
+
+        <Question2>
+            <Question>
+                <!-- What are HTML tags? How are they structured? Give Us 5 Tags As A Example. -->
+            </Question>
+
+            <Answer>
+                <!-- HTML tags are keywords enclosed in angle brackets (<>) that define how content should be structured and
+                    displayed on a webpage. Most tags have opening tag <p> and a closing tag </p>. Some, like <img>, are
+                    self-closing and do not need a closing tag. -->
+            </Answer>
+
+            <Example>
+                <!-- <div></div>
+                <p></p>
+                <img src="" alt="">
+                <h1></h1>
+                <input type="text"> -->
+            </Example>
+        </Question2>
+
+
+        <Question3>
+            <Question>
+                <!--  What is the difference between <head>, <body>, and <html> tags? & the role of the <!DOCTYPE html> declaration?-->
+            </Question>
+
+            <Answer>
+                <!-- 
+                <html> is the parent tag of head and body tag.It wraps the the head and body tag.
+                
+                In the  <head> tag we keep metadata ,title,external css link,script,cdn link etc. this content will not show on webpage. 
+    
+               In the  <body> tag we keep full structure  of a webpage.like img text heading from . All content will show in webpage 
+                -->
+            </Answer>
+
+
+        </Question3>
+
+        <Question4>
+            <Question>
+                <!-- Describe the function of the <title> tag. Where does it appear With Example.      -->
+            </Question>
+
+            <Answer>
+                <!-- <title> tag is used in <head> tag .<title> tag defined the title of webpage which appears on the browser tab -->
+            </Answer>
+
+            <Example>
+                <!-- 
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>My First Webpage</title>
+                </head>
+                <body>
+                </body>
+                </html>
+    
+                -->
+            </Example>
+        </Question4>
+
+        <Question5>
+            <Question>
+                <!-- How do you add comments in HTML, and why are they useful? -->
+            </Question>
+
+            <Answer>
+                <!-- Comments is kind of some text which will not appears on webpage . We can describe the code using comment and in future help other developer to understand  code -->
+            </Answer>
+
+            <Example>
+                <!-- This is a comment -->
+            </Example>
+        </Question5>
+
+    </step1>
+
+
+
+
+    <step2>
+        <Question6>
+            <Question>
+                <!-- What is the difference between an HTML element and an HTML attribute give us example with proper Explanation.  -->
+            </Question>
+
+            <Answer>
+                <!-- An HTML element is a complete component of an HTML document that consists of an opening tag, content, and a closing tag. In the other hand attribute provides additional information about an HTML element. we write an attribute in a opening element -->
+            </Answer>
+
+            <Example>
+                <!-- <p>This is a element.</p>
+
+                <img src="" alt="">
+
+                in the img tag src and alt is attribute
+ -->
+            </Example>
+        </Question6>
+
+        <Question7>
+            <Question>
+                <!-- Explain the global attributes in HTML, such as class, id, style, and title With Example. -->
+            </Question>
+
+            <Answer>
+                <!-- Using global attribute we can do functionality and style. Assigns one or more CSS classes to an element for styling. Assigns a unique identifier to an element, mainly for JavaScript targeting or CSS.if we need inine style we can use style attribute-->
+            </Answer>
+
+            <Example>
+                <!-- .highlight {
+                color: blue;
+                font-weight: bold;
+                }
+                    -->
+                <!-- <p class="highlight">This paragraph has a different style.</p>
+                 -->
+
+                <!-- <p style="color: red; font-size: 20px;">This paragraph is styled inline.</p>
+                     -->
+
+                <!-- <a href="#" title="Cascading Style Sheets">CSS</a>
+                 -->
+            </Example>
+        </Question7>
+
+        <Question8>
+            <Question>
+                <!-- What is the purpose of the alt attribute in an <img> tag? -->
+            </Question>
+
+            <Answer>
+                <!-- If the image fails to load  the alt text will be displayed.Search engines use the alt text to understand what the image represents, improving the page's search ranking. -->
+            </Answer>
+
+            <Example>
+                <!-- <img src="logo.png" alt="Company logo">
+                 -->
+            </Example>
+        </Question8>
+
+        <Question9>
+            <Question>
+                <!-- Describe the href attribute and its role in the <a> tag? -->
+            </Question>
+
+            <Answer>
+                <!-- The href specifies the destination of the hyperlink.We can provide any link. if we click the a tag it will redirect the href link. and we can also change a section on the same page using href.  -->
+            </Answer>
+
+            <Example>
+                <!-- 
+                <a href="https://www.google.com">Google</a>
+                <a href="#section1">Go to Section 1</a>
+                -->
+            </Example>
+        </Question9>
+
+        <Question10>
+            <Question>
+                <!-- How does the target attribute work within an <a> tag? What is _blank? -->
+            </Question>
+
+            <Answer>
+                <!--We can  controls where the linked page opens when a user clicks the link. _blank is  a value of target attribute. if we give value _blaank linked page will open in new tab -->
+            </Answer>
+
+            <Example>
+                <!-- <a href="https://example.com" target="_blank">Open in New Tab</a>
+                -->
+
+                <!-- <a href="page.html" target="_self">Open in Same Tab</a>
+                -->
+            </Example>
+        </Question10>
+    </step2>
+
+
+
+
+    <step3>
+
+        <Question11>
+            <Question>
+                <!--How to add favicon in HTML & Why ?  -->
+            </Question>
+
+            <Answer>
+                <!-- we use favicon because it helps users identify my site.It  makes  easier to find my site among multiple tabs. -->
+            </Answer>
+
+            <Example>
+                <!-- <head>
+                <link rel="icon" href="favicon.ico" type="image/x-icon">
+                </head>
+                -->
+            </Example>
+        </Question11>
+
+
+        <Question12>
+            <Question>
+                <!-- What is formatting in HTML? -->
+            </Question>
+
+            <Answer>
+                <!-- HTML Formatting is a process that allows us to format text to increase its visual appeal. Various HTML tags can change how text appears on a web page and make the text attractive. We can use HTML text formatting tags to bold, italicize, underlined text, and do more. -->
+            </Answer>
+
+            <Example>
+                <!--  -->
+            </Example>
+        </Question12>
+
+        <Question13>
+            <Question>
+                <!--What Is Inline and block elements in html5 Give Us The Proper Explain With Example?   -->
+            </Question>
+
+            <Answer>
+                <!--Block elements take up the full width available and start on a new line. They create a block of content and can contain other block elements or inline elements.Inline elements take only necessary width and do not start new line.They can be nested inside block elements but cannot contain block elements. -->
+
+            </Answer>
+
+
+            <Example>
+                <!--<p>This is block element</p>  -->
+                <!-- <span> This is inline element</span> -->
+            </Example>
+        </Question13>
+
+        <Question14>
+            <Question>
+                <!-- What is a marquee? -->
+            </Question>
+
+            <Answer>
+                <!--A marquee is an HTML tag used to create scrolling text or images across a web page. It is often used for announcements, news, or special messages that need to attract attention.We can change direction ,speed and behavior -->
+            </Answer>
+
+            <Example>
+                <!--<marquee behavior="scroll" direction="left">heloo fuck</marquee>  -->
+            </Example>
+        </Question14>
+
+        <Question15>
+            <Question>
+                <!-- Explain the difference between <p>, <span>, and <div> tags. When would you use each? -->
+            </Question>
+
+            <Answer>
+                <!-- <p> tag is a block element. we use p tag when we need block of text as a paragraph.<span> tag is a inline element. we use span tag when we need to style or manipulate specific text or parts of content without breaking the line . <div> tag is block-level element for grouping elements.we use div when we need to group multiple elements (like text, images, or forms) for styling or layout purposes using CSS-->
+            </Answer>
+
+            <Example>
+                <!--<p>This is p tag</p>
+                <span>This is span tag</span>
+                <div>This is div tag</div>  -->
+            </Example>
+        </Question15>
+
+        <Question16>
+            <Question>
+                <!--Describe the <ul>, <ol>, and <li> tags for creating lists.  -->
+            </Question>
+
+            <Answer>
+                <!-- ul means unordered list if we want to make an unordered list like we have to use ul tag .In ul tag we have to use li tag for each item as a child . ol means ordered list like i have 10 product and i want to show like (1.apple,2.orange,.. more)  we have to use ol and in the ol we have use li as child .we can change the type like (1,a,A,i) ,starting number etc-->
+            </Answer>
+
+            <Example>
+                <!-- <ul>
+                <li>Apple</li>
+                <li>Orange</li>
+                 </ul> -->
+
+                <!-- <>
+                <ol>Apple</ol>
+                <li>Orange</li>
+                </ol> -->
+            </Example>
+        </Question16>
+
+        <Question17>
+            <Question>
+                <!-- Describe how <input> works and some of its types, such as text, radio, and checkbox. -->
+            </Question>
+
+            <Answer>
+                <!-- The <input> element in HTML is used to create various types of interactive controls for forms. if we give input type text user can give input and we can get input from user.if we give type radio user can select one option like gender.Type checkbox is used for filtering like we have many brands and we can check whatever brands product we need -->
+            </Answer>
+
+            <Example>
+                <!-- <input type="text"> -->
+                <!-- <input type="radio"> -->
+                <!-- <input type="checkbox"> -->
+            </Example>
+        </Question17>
+
+        <Question18>
+            <Question>
+                <!-- What are <button>, <textarea>, and <select> tags, and how do they function?  -->
+            </Question>
+
+            <Answer>
+                <!-- we use <button> tag to create any type button . like login reset submit etc. We can login or submit form when form submit or button clikced. The purpose of <textarea>  is to creates a multi-line text input field for larger amounts of text And we use <select> tag to creates a drop-down list for selecting an option.if we wanna create a dropdown we have to give <option> tag for for each option in the select tag   -->
+            </Answer>
+
+            <Example>
+                <!-- <button type="submit">Submit</button> -->
+                <!--  <textarea rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+-->
+                <!-- <select name="country">
+                <option value="bd">Bangladesh</option>
+                <option value="in">India</option>
+                <option value="us">United States</option>
+                </select>
+                -->
+            </Example>
+        </Question18>
+
+        <Question19>
+            <Question>
+                <!-- How to link CSS to HTML? -->
+            </Question>
+
+            <Answer>
+                <!-- We can link CSS to HTML using <link/>.In the head tag we have to use link tag and we have to give the file path in href as attritube. -->
+            </Answer>
+
+            <Example>
+                <!--<head>
+                <link rel="stylesheet" href="styles.css" />
+                <title>My Website</title>
+                </head>  -->
+            </Example>
+        </Question19>
+
+        <Question20>
+            <Question>
+                <!-- What is the <label> tag, and how is it associated with form inputs? -->
+            </Question>
+
+            <Answer>
+                <!-- The <label> tag in HTML is used to define a label for a form input, improving accessibility and usability by linking descriptive text with input fields.It helps users understand what each input field is for.Using the for attribute in label and id attribute in input and same value for each attribute we can associates text with a input -->
+            </Answer>
+
+            <Example>
+                <!--<label for="username">Username:</label>
+                <input type="text" id="username" name="username" />
+                -->
+            </Example>
+        </Question20>
+
+    </step3>
+
+
+
+
+    <step4>
+        <Question21>
+            <Question>
+                <!-- What is the <iframe> tag, and what are some common attributes used with it? -->
+            </Question>
+
+            <Answer>
+                <!-- Through <iframe> tag we can  embed another HTML page or content (like videos, maps, or websites) inside a webpage.Some common attributes are (src,width,height,title,frameborder).Src is url of webpage or content to be embedded.Using height and width we can controls height and width. Through title we can describes the content of the iframe for accessibility. -->
+            </Answer>
+
+            <Example>
+                <!-- <iframe src="https://example.com"></iframe>
+ -->
+                <!-- <iframe src="https://www.example.com" width="600" height="400"></iframe>
+ -->
+                <!-- <iframe src="https://www.example.com" title="Embedded Example Site"></iframe>
+ -->
+            </Example>
+        </Question21>
+
+
+        <Question22>
+            <Question>
+                <!-- Describe how the <audio> and <video> tags work, including common attributes like controls, autoplay, and loop. -->
+            </Question>
+
+            <Answer>
+                <!-- The <audio> and <video> tags are used to embed audio and video files directly into a webpage.controls attribute shows play, pause, volume controls.If we use autoplay attribute it  starts playing automatically. loop attribute repeats the media continuously.-->
+            </Answer>
+
+            <Example>
+                <!-- <audio src="audio.mp3" controls autoplay loop></audio>
+                <video src="video.mp4" controls></video>
+                -->
+            </Example>
+        </Question22>
+
+        <Question23>
+            <Question>
+                <!-- Explain the <picture> tag and its usage in responsive design -->
+            </Question>
+
+            <Answer>
+                <!-- The <picture> tag is used for responsive images, loading different images based on screen size or resolution. It improves performance by serving the most appropriate image for the device. -->
+            </Answer>
+
+            <Example>
+                <!-- <picture>
+                <source media="(max-width: 600px)" srcset="small.jpg">
+                <source media="(max-width: 1200px)" srcset="medium.jpg">
+                <img src="large.jpg" alt="Landscape">
+                </picture>
+                -->
+            </Example>
+        </Question23>
+
+        <Question24>
+            <Question>
+                <!--Design a basic form that includes text input, radio buttons, a checkbox, and a submit button.  -->
+            </Question>
+
+            <Example>
+                <!-- <form action="/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+
+                <button type="submit">Submit</button>
+                </form>
+                -->
+            </Example>
+        </Question24>
+
+        <Question25>
+            <Question>
+                <!--Embed a responsive YouTube video using the <iframe> tag.  -->
+
+
+                <Example>
+                    <!-- HTML -->
+                    <!-- <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube Video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div> -->
+
+                    <!-- CSS -->
+                    <!-- .video-container {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    /* 16:9 ratio */
+                    height: 0;
+                    overflow: hidden;
+                }
+        
+                .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                } -->
+                </Example>
+        </Question25>
+
+        <Question26>
+            <Question>
+                <!-- Make a collapsible/expandable section using <details> and <summary> tags. -->
+
+
+                <Example>
+                    <!--     
+                <details>
+                    <summary>What is the purpose of the details tag?</summary>
+                    <p>The details tag creates a disclosure widget from which the user can obtain additional
+                        information or controls. It can be toggled open or closed.</p>
+                </details>
+ -->
+                </Example>
+        </Question26>
+
+        <Question27>
+            <Question>
+                <!-- Create a simple navigation bar using <nav>, <ul>, and <li> tags with three links. -->
+            </Question>
+
+            <Example>
+                <!-- HTML -->
+                <!-- 
+                <nav>
+                     <ul>
+                         <li><a href="#home">Home</a></li>
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                     </ul>
+                </nav> -->
+
+                <!-- CSS -->
+                <!-- 
+                nav ul {
+                    list-style-type: none;
+                    padding: 0;
+                    display:flex;
+                    gap:10px;
+                }
+                nav ul li a {
+                    color: black;
+                    text-decoration: none;
+                }
+                nav ul li a:hover {
+                    text-decoration: underline;
+                }
+                 -->
+            </Example>
+        </Question27>
+
+        <Question28>
+            <Question>
+                <!--Create a complex table with merged cells (using colspan and rowspan) and include a <caption>, <thead>, <tfoot>, and <tbody>. Add descriptive <th> elements for accessibility and structure.  -->
+            </Question>
+
+
+            <Example>
+                <!-- HTML  -->
+                <!-- 
+                
+    <table>
+        <caption>Employee Attendance Record</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Employee Name</th>
+                <th colspan="3">Attendance</th>
+                <th rowspan="2">Total Hours</th>
+            </tr>
+            <tr>
+                <th>Present</th>
+                <th>Absent</th>
+                <th>Leave</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>20</td>
+                <td>2</td>
+                <td>1</td>
+                <td>160</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>18</td>
+                <td>4</td>
+                <td>1</td>
+                <td>144</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>38</strong></td>
+                <td><strong>6</strong></td>
+                <td><strong>2</strong></td>
+                <td><strong>304</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+                 -->
+
+
+                <!-- CSS  -->
+
+
+                <!-- 
+                  table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 8px;
+        }
+                -->
+            </Example>
+        </Question28>
+
+        <Question29>
+            <Question>
+                <!--Create a simple webpage layout with a header, main section, and footer using only HTML and semantic tags.  -->
+            </Question>
+
+
+            <Example>
+                <!-- <header>
+    <h1>Welcome to My Website</h1>
+</header>
+
+<main>
+    <h2>Main Content</h2>
+    <p>This is where the main content of the webpage goes. You can add articles, images, and other information here.</p>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Website</p>
+</footer> -->
+            </Example>
+        </Question29>
+
+        <Question30>
+            <Question>
+                <!-- Write Your favourite 10 HTML Tags & Explain Us Why That’s Your favourite tags.  -->
+            </Question>
+
+            <Answer>
+                <!-- 
+                1.    <div>: A versatile container for grouping elements, great for layout management.
+
+                2.      <header>: Defines the header section, improving semantic structure and accessibility.
+
+                3.    <footer>: Represents the footer area, useful for including copyright and contact information.
+
+                4.    <article>: Encapsulates self-contained content like blog posts, aiding in SEO and readability.
+
+                5.    <section>: Groups thematic content, helping structure larger documents logically.
+
+                6.    <nav>: Defines navigation links, making it clear where to find important sections of a site.
+
+                7.    <h1> to <h6>: Headings that establish a hierarchy of content, enhancing accessibility and SEO.
+
+                8.    <p>: Represents paragraphs of text, making it essential for clear content presentation.
+
+                9.    <ul> / <ol>: Creates unordered and ordered lists, useful for organizing information succinctly.
+
+                10    <img>: Embeds images, crucial for visual content and enhancing user engagement. -->
+            </Answer>
+
+        </Question30>
+
+
+    </step4>
+
+
+</body>
+
+</html>

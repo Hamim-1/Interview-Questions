@@ -1,0 +1,477 @@
+/* Step 1 */
+/* Question 1 
+Question : What is CSS, and how does it work with HTML?
+
+
+Answer: CSS full form is Cascading Style Sheets.CSS is a stylesheet language used to describe the presentation of an HTML document. It controls how elements appear on the webpage, such as layout, colors, fonts, and spacing.
+
+ How It Works: HTML provides the structure, while CSS handles the styling, creating visually appealing and responsive web pages.
+
+
+*/
+
+
+/* Question 2 
+Question : What is the difference between inline, internal, and external CSS?
+
+
+Answer: We can style HTML element 3 different way. First one is inline css for this we have to add style attribute on a element.we can style to a single element only.It hard to maintain and reuse.
+
+Second one is internal.For use internal css we have to use <style> tag in the <head> tag.We can style multiple elements within the same page.
+
+Last one is external css.If we want to use external css we have to do link a external file in the <head> tag using <link>.The file will be .css file.We can style multiple pages.It  easy to maintain, and improves page load speed.
+
+
+Example: Inline : <p style="color: red;">Hello</p>
+         Internal: <style>
+                        p { color: blue; }
+                   </style>
+
+        external: <link rel="stylesheet" href="styles.css">
+*/
+
+
+/* Question 3 
+Question : Explain the CSS box model. What properties does it consist of?
+
+
+Answer: The CSS Box Model consists of content, padding, border, and margin, controlling the element’s size and spacing.
+Content holds the text,img or elements inside the box.
+Padding adds space between the content and the border.
+Border surrounds the padding and content.
+Margin creates space between the element and others outside it.
+
+*/
+
+
+/* Question 4 
+Question : What is specificity in CSS, and how does it affect styling? 
+
+
+Answer: Specitfycity in css is which style will be applicted means which style will be user can see if i give multiple style on a single element.
+
+Inline styles (style attribute) have the highest specificity.
+ID (#id) are more specific than classes or attributes.
+Classes, pseudo-classes, and attributes have lower specificity than IDs.
+Elements and pseudo-elements have the lowest specificity.
+
+*/
+
+
+/* Question 5 
+Question : How do CSS selectors work, and what are some common types of selectors?
+
+
+Answer: CSS selectors target HTML elements to apply styles. Here are some common types:
+
+Universal Selector (*) – Targets all elements.
+
+Element Selector – Targets specific HTML tags.
+
+Class Selector (.class) – Targets elements with a specific class.
+
+ID Selector (#id) – Targets a unique element with an ID.
+
+Group Selector – Targets multiple elements.
+
+
+/* Question 1 
+Question : 
+
+
+Answer:
+
+
+Example:
+*/
+
+
+/* Question 6 
+Question : What are pseudo-classes and pseudo-elements? Give examples of each.
+
+
+Answer: Pseudo-classes are a  special state of an element.
+
+Using  pseudo-elements we can style specific parts of an element or we can add an element;
+
+Example: Pseudo-classes: a:hover { color: red; }
+        
+         Pseudo-elements: p::first-line { font-weight: bold; }
+
+*/
+
+
+/* Question 7 
+Question : Explain the concept of inheritance in CSS.
+
+
+Answer: In CSS, inheritance controls what happens when no value is specified for a property on an element.Some properties, like color, font-family, and line-height, are inherited by default.Some properties, such as margin, padding, and border, are not inherited.For example if we a apply  color:"blue" on a div all text will be blue.In the other hand if we give a border to div is not applicable for element tag.
+
+
+*/
+
+
+/* Question 8 
+Question : What is the !important rule in CSS, and when should you use it?
+
+
+Answer: The !important rule in CSS is a way to give a style declaration higher priority over other conflicting styles. When applied, it overrides all other declarations for that property, regardless of specificity.
+
+When to Use: If we wanna overrides a style.
+
+Example:
+*/
+
+
+
+
+/* Step 2 */
+/* Question 1 
+Question : How does the display property work, and what are the different display values?
+
+
+Answer: The display property controls how an element is visually represented on the page and how it interacts with other elements.
+
+block: The element takes up the full width available.
+
+inline: The element takes up only as much space as its content.
+
+inline-block: Similar to inline but allows setting width and height.
+
+none:The element will not show;
+*/
+
+
+/* Question 2
+Question : What is the position property, and how do different position values (static, relative, absolute, fixed, sticky) behave?
+
+
+Answer: The position property controls how an element is placed in the document and interacts with other elements.
+
+static : It is default.It has not any special position
+
+relative : It positioned relative to its original position.If we give top: 10px; it will moves the element 10px down from where it would normally be.
+
+
+absolute : We can change position by using absolute. if parent element have relative properties and we give absolute to child we can easily move top,bottom,right,left position.
+
+fixed : we can fixed element using (position:fixed;) properties in any position.
+
+
+sticky : Acts as relative initially, but becomes fixed when scrolling past a threshold.
+
+*/
+
+
+
+/* Question 3 
+Question : How do the padding, margin, and border properties work in CSS?
+
+
+Answer: 
+Padding adds space inside the element, between the content and the border.
+
+Border creates a visible boundary around the  content.boundary means line.
+
+Margin adds space outside the element, separating it from other elements.
+*/
+
+
+/* Question 4 
+Question : Explain the flex property. How do flex-grow, flex-shrink, and flex-basis work?
+
+
+Answer: The flex property is a shorthand for defining how a flex item grows, shrinks, and takes up space inside a flex container. It is a combination of three properties: flex-grow, flex-shrink, and flex-basis.
+
+flex-grow controls how much an item can grow relative to others when extra space is available.
+
+flex-shrink determines how much an item will shrink relative to others when space is limited.
+
+flex-basis defines the initial size of a flex item before any growing or shrinking happens.
+*/
+
+
+/* Question 5 
+Question : What is the difference between width, min-width, and max-width?
+
+
+Answer:
+ width: width sets the fixed width of an element.
+
+ max-width: if we give  (max-width: 500px) in a element. this element won't be bigger than 500px . but if there is no space for 500px it will be responsive.
+
+  min-width: if we give  (min-width: 500px) in a element. this element won't be smaller than 500px . but if this element get more space than 500px it will take this space.
+
+*/
+
+
+/* Question 6 
+Question : How does the z-index property work, and when would you use it?
+
+
+Answer: An element with a higher z-index value will appear in front of an element with a lower z-index value.Only works on positioned elements (relative, absolute, fixed).
+
+I would use when i  make a fixed element or sidebar slider.
+*/
+
+
+/* Question 7 
+Question : What is the difference between the opacity and visibility properties?
+
+
+Answer: By using opacity we can meke transparent element and keeps interactive if not give value 0 but when we will use visibility this element will be visible or hidden.
+
+
+Example:
+*/
+
+
+
+
+
+/* step3 */
+/* Question 1 
+Question : Using flex we can make one-dimensional (either row or column) layout but if we use grid we can make two-dimensional (both rows and columns) layout.Using flex we can  controls alignment between flex items dynamically.If we use grid we can  control over entire layout with defined row/column tracks.
+
+I use flex when i need one dymensional layout.If i we both dymensional layout i use grid.
+
+
+Answer:
+
+
+Example:
+*/
+
+
+/* Question 2 
+Question : Explain how to create a responsive layout using media queries.
+
+
+Answer: To create a responsive layout using media queries, we can define CSS rules that apply based on the screen size or device type.when screenn size will be small like(phone) we can change flex cloumn.
+
+
+Example:
+*/
+
+
+/* Question 3 
+Question : How do you create a centered element in CSS? Provide multiple ways.
+
+
+Answer: we can do element centered many ways here are some.
+
+
+Example: .parent {
+                display: flex;
+                justify-content: center; 
+                align-items: center;    
+                height: 100vh;
+         }
+
+         .parent {
+                display: grid;
+                place-items: center;
+                height: 100vh;
+        } 
+
+        .parent {
+                position: relative;
+                height: 100vh;
+        }
+        .child {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+        }
+
+
+
+*/
+
+
+/* Question 4 
+Question : How does CSS Grid work, and what are grid-template-rows and grid-template-columns?
+
+
+Answer: CSS grid is a two-dimensional layout system that allows us to arrange elements in rows and columns.we can design complex layout using grid.
+
+Through grid-template-rows we can defines the number and height of rows in the grid.
+
+Through grid-template-columns we can defines the number and width of columns in the grid.
+*/
+
+
+/* Question 5 
+Question : How does the flex-direction property work in Flexbox, and what are its values?
+
+Answer: Using flex-direction we can change the direction of layout.there are some value of flex direction (row,column,row-reverse,column-reverse).
+
+row Items are placed horizontally from left to right.
+
+row-reverse Items are placed horizontally, but from right to left.
+
+column:Items are placed vertically from top to bottom.
+
+column-reverse Items are placed vertically, but from bottom to top.
+*/
+
+
+/* Question 6 
+Question : What is a viewport, and how do you make elements responsive to viewport changes?
+
+
+Answer: The viewport is the visible area of a web page on a user’s screen (browser window). It varies based on the device (desktop, tablet, or mobile).
+
+*/
+
+
+/* Question 7 
+Question : How can you create a sticky footer that stays at the bottom of the page?
+
+
+Answer: using position fixed we can make sticky footer.
+
+
+Example: HTML
+          <footer>
+                Sticky Footer
+          </footer>
+
+          CSS
+            footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 50px;
+                background-color: #333;
+                color: white;
+                text-align: center;
+                line-height: 50px; 
+           }
+*/
+
+
+/* Question 8 
+Question : Explain how you would approach creating a mobile-first design.
+
+
+Answer: Creating a mobile-first design involves prioritizing the design and development of my website or application for mobile devices before scaling up to larger screens.
+
+Understand Your Audience: Research  target users and their behaviors on mobile devices.I have to Analyze the types of content and features they value most.
+
+Prioritize Content: Identify essential content and features for mobile users. Focus on simplicity, usability, and easy navigation.
+
+Responsive design: I have to ensure the design adapts to various screen sizes.
+
+Optimize  Performance: Minimize image sizes, scripts, and styles to enhance loading speed.
+
+*/
+
+
+
+
+/* Step 4 */
+/* Question 1 
+Question : What do you understand by the universal sector?
+
+
+Answer: The universal selector (*) applies styles to all elements in a document.It's often used for resetting styles or applying a base style across the entire page.
+
+
+Example: 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*/
+
+
+/* Question 2 
+Question : What are CSS preprocessors, and how do they work? Give examples like SASS or LESS.
+
+
+Answer: CSS preprocessors are scripting languages that extend the capabilities of CSS, allowing developers to write styles in a more efficient and organized manner. They provide features such as variables, nested rules, mixins, and functions, which help manage complex stylesheets more easily.
+
+How They Work : Preprocessors use their own syntax (like SCSS for SASS or LESS syntax) that compiles down to standard CSS.A build tool or a preprocessor compiler takes the preprocessor code and converts it into regular CSS that browsers can understand.
+
+Example:
+$primary-color: #3498db;
+
+.button {
+  background-color: $primary-color;
+  color: white;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+
+*/
+
+
+/* Question 3 
+Question : Explain CSS custom properties (CSS variables) and their benefits.
+
+
+Answer: CSS custom properties, commonly known as CSS variables, we can declared using the -- prefix and can be accessed using the var() function.
+
+benifits : Custom properties can be reused throughout the stylesheet, reducing redundancy and making it easier to maintain.We can update dynamically with JavaScript.Changing the value of a custom property in one place (like --primary-color) will automatically update all instances where it's used.
+
+
+Example:
+*/
+
+
+/* Question 4 
+Question : How do CSS animations work, and how can you create a keyframe animation?
+
+
+Answer: CSS animations allow elements to transition between different styles smoothly over a specified duration. We can set the duration and everything. They can create engaging visual effects without relying on JavaScript.Fist define the aniamtion name,duration,delay,behavior of the animation.second we can do when what change will be.
+
+
+Example: @keyframes slide {
+                0% { transform: translateX(0); }
+                50% { transform: translateX(50px); }
+                100% { transform: translateX(0); }
+        }
+
+*/
+
+
+/* Question 5 
+Question : What are CSS transitions, and how are they different from animations?
+
+
+Answer:CSS transitions and animations are used to create smooth visual effects, but they different in how they work and when to use them.CSS transitions enable changes between two states over a specified duration when a property value changes.Animation is what changes will be in element and transition is how long take to change.
+
+
+*/
+
+
+/* Question 6 
+Question : What is the difference between rem, em, and px units?
+
+
+Answer: we use rem,em and px for height,width,font-size etc.Use px when you want the size to be fixed. Use rem/em when you want it to be adaptive to the scale of the system. For example, fonts using px wont re-scale if you change font size of the system. If you use rem or em their size will change.16 px = 1 rem/em
+
+
+*/
+
+
+/* Question 7 
+Question : What is SVG and how can it be used to create custom shapes?
+
+
+Answer: SVG, or Scalable Vector Graphics, is a vector file format that can be used to create custom shapes and display them on website.SVG graphics are vector-based, meaning they scale without losing quality.we can embed them directly in HTML.
+
+
+Example: <svg width="100" height="100">
+  <path d="M10 10 H 90 V 90 H 10 Z" fill="red" />
+</svg>
+
+*/
